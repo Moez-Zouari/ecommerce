@@ -1,7 +1,9 @@
 package com.luv2code.ecommerce.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
+
 
 import javax.persistence.*;
 import java.util.List;
@@ -23,7 +25,9 @@ public class Country {
     @Column(name = "name")
     private  String name;
 
-    // TODO : Set up one-to-many states
+
     @OneToMany(mappedBy = "country")
+    // @JsonIgnore will ignore the states
+    @JsonIgnore
     private List<State> states;
 }
