@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-// Il faut faire attention lors de l'importation de la bibliotheque du pagination
-//import java.awt.print.Pageable;
+
 
 
 @CrossOrigin("http://localhost:4200")
